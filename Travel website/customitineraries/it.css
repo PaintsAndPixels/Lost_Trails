@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Locomotive handles scrolling */
+  }
+  
+  .custom-itineraries-section {
+    padding: 100px 50px;
+    background: #f8f8f8;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .section-description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 50px;
+  }
+  
+  .cards-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: left;
+    opacity: 0; /* Initially hidden for animation */
+    transform: translateY(50px); /* Positioned off-screen */
+    transition: all 0.5s ease-out;
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    color: #222;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  

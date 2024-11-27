@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    color: #f9f4f4;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+  }
+  *::selection {
+    background-color: #fbf8f8;
+    color: #95c11e;
+  }
+  
+  body::-webkit-scrollbar {
+    display: block;
+    width: 8px;
+    background: #95c11e;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #f4eded;
+  
+    border-radius: 50px;
+  }
+  body {
+    overflow-x: hidden;
+    background-color: #000;
+  }
+#card-page h1{
+    height: 15vh;
+    width: 100%;
+    font-weight: 1000;
+    font-family: Franklin Gothic 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* background-color: red; */
+    display: flex;
+    padding: 0 50px;
+    align-items: left;
+    position: relative;
+    line-height: 175px;
+    z-index: 10;
+    justify-content: space-around;
+  }
+  #card-page h2{
+    height: 15vh;
+    width: 100%;
+    font-family: Franklin Gothic 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* background-color: red; */
+    display: flex;
+    align-items: left;
+    position: relative;
+    line-height: 100px;
+    z-index: -10;
+    justify-content: space-around;
+  }
+  #cards-container {
+    /* background-color: red; */
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#cards-container h3{
+   height: 10vh;
+   width: 100%;
+   font-weight: 1000;
+    /* background-color: red; */
+    display: flex;
+    align-items: left;
+    position: relative;
+    line-height: 100px;
+    z-index: -10;
+    justify-content: space-around
+}
+  .card {
+    height: 75%;
+    width: 25%;
+    /* background-color: blue; */
+    border-radius: 40px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: all ease 0.6s;
+    
+  }
+  
+  #card1 {
+    background-image: url(https://www.adotrip.com/public/images/city/master_images/60f14806ed7c5-Idukki_Attractions-min.jpg);
+  }
+  #card2 {
+    background-image: url(https://royalleisuretours.com/wp-content/uploads/2016/04/The-Dazzling-Pine-Forest-Ooty1-768x513.jpg);
+  }
+  #card3 {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/2/2c/Athirapally_Water_falls.jpg);
+  }
+  #card4 {
+    background-image: url(https://www.tamilnadutourism.tn.gov.in/img/pages/large-desktop/kancheepuram-1655983334_6d3935580aa02e02f27f.webp);
+  }
+  #card5 {
+    background-image: url(https://i.pinimg.com/564x/ed/69/e6/ed69e6153e7b8cf8376ca01faeab8865.jpg);
+  }
+  #card6 {
+    background-image: url(https://c0.wallpaperflare.com/preview/966/108/950/india-kodaikanal-kodaikanal-lake.jpg);
+  }
+  #card7 {
+    background-image: url(https://karnatakatourism.org/wp-content/uploads/2020/06/Kodi_1.jpg);
+  }
+  #card8 {
+    background-image: url(https://karnatakatourism.org/wp-content/uploads/2020/10/Vastuchitra_Badami-Fort-02.jpg);
+  }
+  #card9 {
+    background-image: url(https://t4.ftcdn.net/jpg/08/66/94/01/360_F_866940191_ud3TRZ47bmZQar43zlesyDNTDo5yNm81.jpg);
+  }
+
+  #card10 {
+    background-image: url(https://kanchenjungaholidays.com/images/destination/sikkim/east-sikkim/east-sikkim-main/east-sikkim1.jpg);
+  }
+  #card11 {
+    background-image: url(https://preview.redd.it/o4utt1l6bg571.jpg?width=826&format=pjpg&auto=webp&s=c008c37c035f62b5770e68219efb64571c9b7f8f)
+  }
+  #card12 {
+    background-image: url(https://www.tourmyindia.com/blog//wp-content/uploads/2021/11/Best-Places-to-Visit-in-North-Sikkim-Gurudongmar-Lake-Tourism.jpg);
+  }
+  #card13 {
+    background-image: url(https://img.freepik.com/premium-photo/aerial-view-meghalaya-laitryngew-village-india-beautiful-mountain-east-khasi-hills-meghalaya-india_1033579-137237.jpg);
+  }
+  #card14 {
+    background-image: url(https://storage.googleapis.com/stateless-www-justwravel-com/2021/06/66851483_2355591914534526_8824396371357335552_o.jpg);
+  }
+  #card15 {
+    background-image: url(https://assets.zeezest.com/blogs/PROD_ZZ%20SEO%20Image%20Resizing%20%2835%29_1680624170958.png);
+  }
+  #card16 {
+    background-image: url(https://content.jdmagicbox.com/comp/west-kameng/n6/9999p3782.3782.200107215739.r7n6/catalogue/kumar-tours-and-travels-dirang-west-kameng-travel-agents-hdoygzg724.jpg);
+  }
+  #card17 {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/1e/A_cross_section_of_luch_green_valley_of_Ziro.jpg);
+  }
+  #card18 {
+    background-image: url(https://media.istockphoto.com/id/910430170/photo/tawang-arunachal-pradesh.jpg?s=612x612&w=0&k=20&c=MKKYsHH_6JRMYROO2bHIsQAW9XoSnl-9nkRGOFgAg0M=);
+  }
+
+  .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #06080092;
+    padding: 30px;
+    padding-top: 160px;
+    opacity: 0;
+    transition: all ease 0.6s;
+  }
+  .overlay h4 {
+    color: #000;
+    font-size: 20px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-bottom: 40px;
+    font-weight: 650;
+  }
+  .card:hover .overlay {
+    opacity: 1;
+  }
+  .card:hover {
+    transform: rotate3d(-1, 1, 0, 20deg)
+  }
+  a, a:visited, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  
+  

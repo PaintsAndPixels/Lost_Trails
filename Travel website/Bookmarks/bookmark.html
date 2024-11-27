@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bookmarks</title>
+  <link rel="stylesheet" href="http://127.0.0.1:5500/Bookmarks/bookmark.css">
+
+</head>
+<body>
+  <header>
+    <h1 id="header-title">Bookmarks</h1>
+    <p id="header-subtitle">Your favorite places, all in one place!</p>
+  </header>
+  <main class="container">
+    <section id="add-bookmark">
+      <h2>Add a Bookmark</h2>
+      <form id="bookmarkForm">
+        <input type="text" id="placeName" placeholder="Place Name" required />
+        <textarea id="description" placeholder="Description"></textarea>
+        <button type="submit">Add Bookmark</button>
+      </form>
+    </section>
+    <section id="bookmarks-list">
+      <h2>Your Bookmarked Places</h2>
+      <div id="bookmarks"></div>
+    </section>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" 
+          integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" 
+          integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer"></script>
+
+  <script src="bookmark.js"></script>
+</body>
+</html>

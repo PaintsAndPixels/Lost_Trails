@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-x: hidden;  
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    animation: changeBackground 12s infinite; /* Animation to change background */
+}
+.navbar {
+    background: #95c11e;
+    border-radius: 10px;
+    padding: 10px 20px;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    box-shadow: 0px 4px 6px rgba(22, 120, 38, 0.2);
+}
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f2faf3 !important;
+}
+.nav-link {
+    color: white !important;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #060606 !important;
+}
+.dropdown-menu {
+    background-color: #040604;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(13, 210, 59, 0.3);
+    transform-origin: top center;
+    animation: dropdown-fade-in 0.5s ease-in-out;
+}
+.dropdown-item {
+    color: #fff;
+    padding: 10px 20px;
+    transition: all 0.3s;
+}
+
+.dropdown-item:hover {
+    background-color: #95c11e;
+    color: #ece7e7;
+}
+
+/* Dropdown animation */
+@keyframes dropdown-fade-in {
+    from {
+        opacity: 0;
+        transform: scaleY(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+/* Dropdown animation */
+@keyframes dropdown-fade-in {
+    from {
+        opacity: 0;
+        transform: scaleY(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+/* Background Image Animation */
+@keyframes changeBackground {
+    0% {
+        background-image: url('https://blog.kesari.in/wp-content/uploads/2017/04/kerala.jpg');
+    }
+    33% {
+        background-image: url('https://th.bing.com/th/id/R.7fb68d75f8b999de8532536443123624?rik=t4u7BPG8yWn1ww&riu=http%3a%2f%2ffocuztours.files.wordpress.com%2f2012%2f08%2fkerala-tourist-places.jpg&ehk=hwtr2t8pbvBWye5yrtBKx8r%2bEBu%2bTn%2fPEvgcax0cI3Q%3d&risl=&pid=ImgRaw&r=0');
+    }
+    66% {
+        background-image: url('https://www.tripsavvy.com/thmb/mOG6jI2mXpDZLpLITerakSvUF8M=/2121x1413/filters:no_upscale():max_bytes(150000):strip_icc()/103819108-56a3c0515f9b58b7d0d39827.jpg');
+    }
+    100% {
+        background-image: url('https://th.bing.com/th/id/R.a01c42806298cc5d0ee042ef07178b94?rik=gbBt812C7kY55g&riu=http%3a%2f%2f2.bp.blogspot.com%2f-_utFf3E32uE%2fTrAI3Y5tAmI%2fAAAAAAAAAFI%2fdfepAiRULDU%2fs1600%2fkerala21.jpg&ehk=xlmLxgJsUMFmgHWU6MbblNyQYsPBGFC099w9pi10QaA%3d&risl=&pid=ImgRaw&r=0');
+    }
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 5px 10px;
+    }
+}
